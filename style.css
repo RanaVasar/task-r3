@@ -887,6 +887,37 @@ line-height: 25.5px; /* 170% */
 .btn-logo {
     display: none;
 }
+.main-left-bottom {
+    width: 90%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+#slider {
+    width: 100%;
+    display: flex;
+    transition: 0.7s;
+}
+#slider img {
+    width: 100%;
+    max-width: 300px;
+}
+.navigation-button {
+    position: absolute;
+    left: 50%;
+   
+    transform: translateX(-50%);
+}
+.navigation-button span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255,255,0.5);
+    cursor: pointer;
+}
+
+
 @media (max-width:1750px) {
     .main-right img {
         max-width: 700px;
@@ -953,6 +984,9 @@ line-height: 25.5px; /* 170% */
     .about-section {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .main-right {
+        margin-top: -350px;
     }
     .about-left {
         justify-content: center;
